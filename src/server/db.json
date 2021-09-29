@@ -1,0 +1,26 @@
+{
+  "postulants":[
+    {
+      "id": 1,
+      "myname": "Alejandro ",
+      "lastname": "Pizarro ",
+      "email": "sergiogg1259@gmail.com",
+      "password": "123456789",
+      "myespeciality": "Desarrollo web",
+      "myexperience": "Junior",
+      "myinfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis at facilisis bibendum, nulla urna vestibulum massa, sed blandit dolor orci eu ex. Aenean quam arcu, efficitur a vestibulum eget, ultrices in velit. Ut vitae urna porta, auctor sapien eget, lobortis ipsum. Curabitur in eros mattis, dignissim urna eu, hendrerit neque. Pellentesque ultrices auctor mi nec facilisis. Maecenas vel dictum ante. Aenean in massa fermentum, venenatis elit ut, commodo lacus. Morbi efficitur laoreet mauris. Suspendisse potenti.565656",
+      "namegithub": "sergiomg1259"
+    },
+    {
+      "id": 2,
+      "myname": "Edson",
+      "lastname": "Vasques",
+      "email": "sergiogg12592@gmail.com",
+      "password": "1234567892",
+      "myespeciality": "Desarrollo web",
+      "myexperience": "Senior",
+      "myinfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis at facilisis bibendum, nulla urna vestibulum massa, sed blandit dolor orci eu ex. Aenean quam arcu, efficitur a vestibulum eget, ultrices in velit. Ut vitae urna porta, auctor sapien eget, lobortis ipsum. Curabitur in eros mattis, dignissim urna eu, hendrerit neque. Pellentesque ultrices auctor mi nec facilisis. Maecenas vel dictum ante. Aenean in massa fermentum, venenatis elit ut, commodo lacus. Morbi efficitur laoreet mauris. Suspendisse potenti.",
+      "namegithub": "symphony701"
+    }
+  ]
+}

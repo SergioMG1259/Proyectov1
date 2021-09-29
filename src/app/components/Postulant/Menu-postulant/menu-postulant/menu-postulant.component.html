@@ -1,0 +1,41 @@
+<p>menu-postulant works!</p>
+<div class="page-container">
+  <header>
+    <div>
+      <button mat-button class="menu-button" (click)="sidenav.toggle()">
+        <mat-icon>{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>
+      </button>
+
+      <a class="title-Menu" routerLink="/">
+        <span class="app-title">Hamburger Menu Demo</span>
+      </a>
+    </div>
+
+  </header>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav  #sidenav
+                  autoFocus="false"
+                  mode="over"
+                  [(opened)]="isMenuOpen"
+                  class="sidenav"
+                  (click)="onSidenavClick()">
+      <a class="options" mat-button routerLink="/MenuPostulant">Page 1</a>
+      <a class="options" mat-button routerLink="/MenuPostulant/ProfilePostulant">Page 2</a>
+      <a class="options" mat-button >Page 3</a>
+      <a class="options" mat-button>Page 4</a>
+      <a class="options" mat-button>Page 5</a>
+    </mat-sidenav>
+    <mat-sidenav-content class="body">
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+
+
+
+
+
+
