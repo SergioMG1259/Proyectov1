@@ -22,5 +22,26 @@
       "myinfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis at facilisis bibendum, nulla urna vestibulum massa, sed blandit dolor orci eu ex. Aenean quam arcu, efficitur a vestibulum eget, ultrices in velit. Ut vitae urna porta, auctor sapien eget, lobortis ipsum. Curabitur in eros mattis, dignissim urna eu, hendrerit neque. Pellentesque ultrices auctor mi nec facilisis. Maecenas vel dictum ante. Aenean in massa fermentum, venenatis elit ut, commodo lacus. Morbi efficitur laoreet mauris. Suspendisse potenti.",
       "namegithub": "symphony701"
     }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Genshin fdfdfdf",
+      "description": "lorem impsum 1 funciono xd",
+      "idown": 1,
+      "linktogithub": " ",
+      "evidence": "https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760",
+      "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png"
+    },
+    {
+      "id": 2,
+      "title": "Battlefield 45",
+      "description": "Mejor que Call of duty 4512",
+      "idown": 1,
+      "linktogithub": " ",
+      "evidence": "https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760",
+      "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png"
+    }
   ]
+
 }

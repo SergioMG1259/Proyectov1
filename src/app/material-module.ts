@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from "@angular/material/icon";
 import {MatCardModule} from "@angular/material/card";
+import {MatGridListModule} from "@angular/material/grid-list";
+
 
 @NgModule({
   declarations:[],
@@ -16,7 +18,8 @@ import {MatCardModule} from "@angular/material/card";
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ]
 })
 export class DemoMaterialModule{}

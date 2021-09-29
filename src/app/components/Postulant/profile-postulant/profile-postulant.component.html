@@ -1,7 +1,43 @@
 
-<h1>Nombre y apellido</h1>
-<p>Info</p>
-<p>Imagen</p>
-<button>Mi especialidad</button>
-<button>Mi experiencia</button>
-<app-project></app-project>
+<mat-grid-list cols="4" rowHeight="4pc">
+  <mat-grid-tile colspan="4">
+    <div class="names-user">
+      <h1>Symphony Roque</h1>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="5" colspan="2"><img src="https://pbs.twimg.com/profile_images/1320794616703164418/A8W5BsYL.jpg" alt="Girl in a jacket" /></mat-grid-tile>
+  <mat-grid-tile rowspan="3" colspan="2">
+    <div class="description-user">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipiscing elit torquent condimentum sem, taciti pharetra eget mus. Scelerisque mus blandit augue nunc nostra senectus interdum lacus, aenean pharetra sagittis ligula mattis tellus in dictumst, iaculis curabitur
+        torquent sollicitudin lobortis gravida leo. Eu libero auctor dignissim porta a cum hac nunc praesent suscipit, venenatis ut duis sociis viverra netus nisi tellus quam, fames facilisis hendrerit pretium tempor cras volutpat himenaeos orci.
+        Tempus magna arcu penatibus nisi ut cubilia, vestibulum euismod accumsan eros vel, volutpat eleifend sed ridiculus montes. Laoreet aliquam convallis tortor consequat odio luctus bibendum dictumst quisque, sagittis taciti auctor nullam
+        integer massa at fames. Ullamcorper dignissim hac sodales sapien luctus tempus mi, suspendisse tristique eget facilisis arcu taciti primis, facilisi risus tincidunt volutpat leo donec.
+      </p>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2" colspan="2">
+    <div class="skills">
+      <button mat-raised-button color="primary">Fronted Developer</button>
+      <button mat-raised-button color="primary">Mobile Developer</button>
+      <button mat-raised-button color="primary">Data Scientist</button>
+    </div>
+
+  </mat-grid-tile>
+  <mat-grid-tile colspan="4">
+    <div class="projects-action">
+      <h2>Projects</h2>
+      <button mat-raised-button color="primary">Add Project</button>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="6" colspan="1">
+    <app-project></app-project>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="6" colspan="1">
+    <app-project></app-project>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="6" colspan="1" *ngFor="let project of projects; let i = index">
+    <app-project></app-project>
+  </mat-grid-tile>
+</mat-grid-list>
+<button (click)="getOnePostulant()">as</button>
