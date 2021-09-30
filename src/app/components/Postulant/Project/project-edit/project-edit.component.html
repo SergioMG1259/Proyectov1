@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>{{title_edit}}</h2>
+<mat-dialog-content class="mat-typography">
+  <div class="input-container">
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>Project's Title</mat-label>
+      <input matInput type="text" />
+    </mat-form-field>
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>Project's Description</mat-label>
+      <textarea matInput placeholder="A awesome project description"></textarea>
+    </mat-form-field>
+
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button cdkFocusInitial mat-dialog-close>Add</button>
+</mat-dialog-actions>
+

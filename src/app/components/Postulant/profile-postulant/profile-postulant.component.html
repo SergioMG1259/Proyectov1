@@ -34,18 +34,21 @@
   </mat-grid-tile>-->
   <mat-grid-tile rowspan="6" colspan="1" *ngFor="let project of myprojects; let i = index">
     <!--<app-project></app-project>-->
-    <mat-card class="example-card" (click)="loockProyect()">
-      <mat-card-header>
+    <mat-card class="example-card" >
+      <mat-card-header (click)="loockProject(project)">
         <mat-card-title>{{project.title}}</mat-card-title>
       </mat-card-header>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <img mat-card-image src="{{project.img}}" alt="Photo of a Shiba Inu">
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="editProject(project)">Editar</button>
+      </mat-card-actions>
     </mat-card>
     <!--<app-project [titleProject]="project.title"></app-project>-->
   </mat-grid-tile>
 </mat-grid-list>
 <button (click)="getOnePostulant()">as</button>
 <button (click)="getMyProjectsown()">PR</button>
-<button (click)="loockProyect()" >hola!</button>
+<!--<button (click)="loockProyect()" >hola!</button>-->
 
 <style>
   .example-card {

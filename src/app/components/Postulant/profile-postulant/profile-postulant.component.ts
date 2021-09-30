@@ -4,7 +4,8 @@ import {Postulant} from "../model/postulant";
 import {PostulantServices} from "../services/Postulant-services";
 import {ProjectsServices} from "../services/Projects-services";
 import {MatDialog} from "@angular/material/dialog";
-
+import {Project} from "../Project/model/project";
+import {ProjectEditComponent} from "../Project/project-edit/project-edit.component";
 
 @Component({
   selector: 'app-profile-postulant',
@@ -48,8 +49,14 @@ export class ProfilePostulantComponent implements OnInit {
       console.log(this.myprojects[0])
     })
   }
-  loockProyect(){
-    const dialogRef=this.dialog.open(ProjectComponent);
+  loockProject(pro:Project){
+    const dialogRef=this.dialog.open(ProjectComponent,{data:pro});
+    dialogRef.afterClosed().subscribe(res=>{
+      console.log(res)
+    })
+  }
+  editProject(pro:Project){
+    const dialogRef=this.dialog.open(ProjectEditComponent,{data:pro})
     dialogRef.afterClosed().subscribe(res=>{
       console.log(res)
     })

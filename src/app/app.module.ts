@@ -8,6 +8,10 @@ import {AppRoutingModule} from "./route/route.module";
 import {MenuPostulantComponent} from "./components/Postulant/Menu-postulant/menu-postulant/menu-postulant.component";
 import { ProfilePostulantComponent } from './components/Postulant/profile-postulant/profile-postulant.component';
 import { ProjectComponent } from './components/Postulant/Project/project/project.component';
+import { ProjectEditComponent } from './components/Postulant/Project/project-edit/project-edit.component';
+import {FormsModule} from "@angular/forms";
+
+
 
 
 
@@ -19,6 +23,8 @@ import { ProjectComponent } from './components/Postulant/Project/project/project
     MenuPostulantComponent,
     ProfilePostulantComponent,
     ProjectComponent,
+    ProjectEditComponent,
+
 
 
   ],
@@ -27,7 +33,8 @@ import { ProjectComponent } from './components/Postulant/Project/project/project
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    DemoMaterialModule
+    DemoMaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
