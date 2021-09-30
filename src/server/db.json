@@ -1,5 +1,5 @@
 {
-  "postulants":[
+  "postulants": [
     {
       "id": 1,
       "myname": "Alejandro ",
@@ -26,7 +26,7 @@
   "projects": [
     {
       "id": 1,
-      "title": "Genshin fdfdfdf",
+      "title": "Genshin Impact",
       "description": "lorem impsum 1 funciono xd",
       "idown": 1,
       "linktogithub": " ",
@@ -35,7 +35,7 @@
     },
     {
       "id": 2,
-      "title": "Battlefield 45",
+      "title": "Battlefield 1",
       "description": "Mejor que Call of duty 4512",
       "idown": 1,
       "linktogithub": " ",
@@ -43,5 +43,4 @@
       "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png"
     }
   ]
-
 }

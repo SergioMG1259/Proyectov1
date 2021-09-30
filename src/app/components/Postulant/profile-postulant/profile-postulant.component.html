@@ -35,10 +35,10 @@
   <mat-grid-tile rowspan="6" colspan="1" *ngFor="let project of myprojects; let i = index">
     <!--<app-project></app-project>-->
     <mat-card class="example-card" >
-      <mat-card-header (click)="loockProject(project)">
+      <mat-card-header >
         <mat-card-title>{{project.title}}</mat-card-title>
       </mat-card-header>
-      <img mat-card-image src="{{project.img}}" alt="Photo of a Shiba Inu">
+      <img mat-card-image src="{{project.img}}" alt="Photo of a Shiba Inu" (click)="loockProject(project)">
       <mat-card-actions>
         <button mat-raised-button color="primary" (click)="editProject(project)">Editar</button>
       </mat-card-actions>

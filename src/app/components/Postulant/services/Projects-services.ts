@@ -54,4 +54,10 @@ export class ProjectsServices {
         retry(2),
         catchError(this.handleError));
   }
+  setproyect(id:number,data:any){
+    return this.http.patch<Project>(`${this.basePath}/${id}`,data,this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
+  }
 }

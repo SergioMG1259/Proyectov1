@@ -15,11 +15,23 @@ import {Optional} from "@angular/core";
 export class ProjectEditComponent implements OnInit {
   title_edit:string
   description_edition:string
-  constructor(public dialog:MatDialog,@Optional() @Inject(MAT_DIALOG_DATA)public data:Project) {
+  id_edit:number
+  titleforedit:string
+  constructor(public dialog:MatDialog,@Optional() @Inject(MAT_DIALOG_DATA)public data:Project, private edit:ProjectsServices) {
     this.title_edit=data.title
     this.description_edition=data.description
+    this.id_edit=data.id
+    this.titleforedit=""
   }
-
+  editproyect(){
+    const submitEdition = {
+      title: this.titleforedit,
+     description: this.description_edition,
+    };
+   this.edit.setproyect(this.id_edit,submitEdition) .subscribe(response=>{
+      console.log(response)
+    })
+  }
   ngOnInit(): void {
   }
 
