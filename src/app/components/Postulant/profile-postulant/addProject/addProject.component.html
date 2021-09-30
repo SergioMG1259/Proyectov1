@@ -1,0 +1,25 @@
+<h2 mat-dialog-title>Add a project to your profile</h2>
+<mat-dialog-content class="mat-typography">
+    <div class="input-container">
+        <mat-form-field class="example-form-field" appearance="fill">
+            <mat-label>Project's Title</mat-label>
+            <input matInput type="text" [(ngModel)]="project.title" />
+        </mat-form-field>
+        <mat-form-field class="example-form-field" appearance="fill">
+            <mat-label>Project's Description</mat-label>
+            <textarea matInput placeholder="A awesome project description" [(ngModel)]="project.description"></textarea>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Project's repository in GitHub</mat-label>
+            <select matNativeControl required>
+        <option value="volvo">Someone</option>
+
+      </select>
+        </mat-form-field>
+
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button cdkFocusInitial (click)="sendNewProject()">Add</button>
+</mat-dialog-actions>

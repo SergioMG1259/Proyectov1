@@ -6,6 +6,10 @@ import {ProjectsServices} from "../services/Projects-services";
 import {MatDialog} from "@angular/material/dialog";
 import {Project} from "../Project/model/project";
 import {ProjectEditComponent} from "../Project/project-edit/project-edit.component";
+import {MatGridListModule} from '@angular/material/grid-list';
+import { AddProjectComponent } from './addProject/addProject.component';
+
+
 
 @Component({
   selector: 'app-profile-postulant',
@@ -58,6 +62,17 @@ export class ProfilePostulantComponent implements OnInit {
   editProject(pro:Project){
     const dialogRef=this.dialog.open(ProjectEditComponent,{data:pro})
     dialogRef.afterClosed().subscribe(res=>{
+      console.log(res)
+    })
+  }
+
+  onOpenDialogAddProjectClick(){
+    let dialogAdd= this.dialog.open(AddProjectComponent)
+    const sub= dialogAdd.componentInstance.onAdd.subscribe(()=>{
+      console.log("Data refrescada");
+      this.getMyProjectsown();
+    });
+    dialogAdd.afterClosed().subscribe(res=>{
       console.log(res)
     })
   }

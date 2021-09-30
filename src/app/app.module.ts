@@ -10,7 +10,11 @@ import { ProfilePostulantComponent } from './components/Postulant/profile-postul
 import { ProjectComponent } from './components/Postulant/Project/project/project.component';
 import { ProjectEditComponent } from './components/Postulant/Project/project-edit/project-edit.component';
 import {FormsModule} from "@angular/forms";
-
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { AddProjectComponent } from './components/Postulant/profile-postulant/addProject/addProject.component';
 
 
 
@@ -24,6 +28,7 @@ import {FormsModule} from "@angular/forms";
     ProfilePostulantComponent,
     ProjectComponent,
     ProjectEditComponent,
+    AddProjectComponent
 
 
 
@@ -34,7 +39,14 @@ import {FormsModule} from "@angular/forms";
     HttpClientModule,
     AppRoutingModule,
     DemoMaterialModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule
+  ],
+  entryComponents: [
+    AddProjectComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
