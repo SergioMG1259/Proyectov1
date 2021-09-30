@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {ProjectComponent} from "../Project/project/project.component";
 import {Postulant} from "../model/postulant";
 import {PostulantServices} from "../services/Postulant-services";
+import {ProjectsServices} from "../services/Projects-services";
+import {MatDialog} from "@angular/material/dialog";
 
 
 @Component({
@@ -12,11 +14,15 @@ import {PostulantServices} from "../services/Postulant-services";
 export class ProfilePostulantComponent implements OnInit {
   postulantData:Postulant;
   projects:any
-  constructor(private postulantService:PostulantServices) {
+  myprojects:any
+  asdad:ProjectComponent
+  constructor(private postulantService:PostulantServices,private proyec:ProjectsServices,public dialog:MatDialog) {
     this.postulantData={} as Postulant ;
+    this.asdad={} as ProjectComponent
    // this.onj=this.getOnePostulant()
     this.getOnePostulant()
-    this.projects = Array(5).fill(4)
+    //this.projects = Array(5).fill(4)
+    this.getMyProjectsown()
   }
 
   ngOnInit(): void {
@@ -28,11 +34,24 @@ export class ProfilePostulantComponent implements OnInit {
     })
   }
   getOnePostulant(){
-    this.postulantService.getById(1).subscribe((response)=>{
+    this.postulantService.getById(1).subscribe(response=>{
       this.postulantData=response
-      console.log(this.postulantData)
-      console.log(this.postulantData.myname)
-      console.log(typeof(response))
+      console.log(response)
+
+    })
+  }
+  getMyProjectsown(){
+
+    this.proyec.getByOwner(1).subscribe(response=>{
+      this.myprojects=response
+      console.log(this.myprojects)
+      console.log(this.myprojects[0])
+    })
+  }
+  loockProyect(){
+    const dialogRef=this.dialog.open(ProjectComponent);
+    dialogRef.afterClosed().subscribe(res=>{
+      console.log(res)
     })
   }
 

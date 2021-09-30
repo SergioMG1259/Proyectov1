@@ -4,15 +4,15 @@ import {HttpErrorResponse} from "@angular/common/http";
 import {HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
 import{throwError} from "rxjs";
-import {Postulant} from "../model/postulant";
+import {Project} from "../Project/model/project";
 import {catchError} from "rxjs/operators";
 import {retry} from "rxjs/operators";
 
 @Injectable({
- providedIn:'root'
+  providedIn:'root'
 })
-export class PostulantServices {
-  basePath = 'http://localhost:3000/postulants';
+export class ProjectsServices {
+  basePath = 'http://localhost:3000/projects';
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
@@ -35,15 +35,21 @@ export class PostulantServices {
     return throwError('Something happened with request, please try again later');
   }
 
-  getAll(): Observable<Postulant> {
-    return this.http.get<Postulant>(this.basePath, this.httpOptions)
+  getAll(): Observable<Project> {
+    return this.http.get<Project>(this.basePath, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));
   }
   getById(id:number){
-   // return this.http.get<any>(`${this.basePath}/?id=${id}`, this.httpOptions)api/v1/
+    // return this.http.get<any>(`${this.basePath}/?id=${id}`, this.httpOptions)api/v1/
     return this.http.get<any>(`${this.basePath}/${id}`, this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
+  }
+  getByOwner(idown:number){
+    return this.http.get<any>(`${this.basePath}/?idwon=${idown}`, this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));

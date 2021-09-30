@@ -1,6 +1,6 @@
-<mat-card class="example-card">
+<!--<mat-card class="example-card">
   <mat-card-header>
-    <mat-card-title>Titulo del proyecto</mat-card-title>
+    <mat-card-title>{{this.titleProject}}</mat-card-title>
   </mat-card-header>
   <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
 </mat-card>
@@ -12,5 +12,17 @@
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
   }
-</style>
+</style>-->
 
+
+<h2 mat-dialog-title>Install Angular</h2>
+<mat-dialog-content class="mat-typography">
+  <h1>
+    asd
+  </h1>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>
