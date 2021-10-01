@@ -6,6 +6,8 @@ import {ProjectsServices} from "../services/Projects-services";
 import {MatDialog} from "@angular/material/dialog";
 import {Project} from "../Project/model/project";
 import {ProjectEditComponent} from "../Project/project-edit/project-edit.component";
+import {ProjectAddComponent} from "../Project/project-add/project-add.component";
+import {ProjectDeleteComponent} from "../Project/project-delete/project-delete/project-delete.component";
 
 @Component({
   selector: 'app-profile-postulant',
@@ -59,7 +61,14 @@ export class ProfilePostulantComponent implements OnInit {
     const dialogRef=this.dialog.open(ProjectEditComponent,{data:pro})
     dialogRef.afterClosed().subscribe(res=>{
       console.log(res)
+
     })
+  }
+  addproject(){
+    const dialogRef=this.dialog.open(ProjectAddComponent,{data:this.postulantData});
+  }
+  deleteproject_dialog(pro:Project){
+    const dialogRef=this.dialog.open(ProjectDeleteComponent,{data:pro})
   }
 
 

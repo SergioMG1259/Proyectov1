@@ -1,0 +1,39 @@
+<h1>Mis anuncios</h1>
+<button mat-raised-button color="primary" (click)="Open_Dialog_Add()">Añadir Anuncios</button>
+<!--<mat-grid-list cols="1" rowHeight="4pc" >
+  <mat-grid-tile rowspan="2" colspan="1" *ngFor="let announce of My_announcements; let i = index">
+
+    <mat-card class="CardA" >
+      <mat-card-header >
+        <mat-card-title>{{announce.infoJob}}</mat-card-title>
+      </mat-card-header>
+
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>-->
+
+<div>
+  <div *ngFor="let announce of My_announcements; let i = index">
+    <mat-card class="cardAnn" >
+      <mat-card-header >
+        <mat-card-title>{{announce.titleAnnouncement}}</mat-card-title>
+        <mat-card-subtitle class="sub">{{announce.speciality+" "+announce.experience}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Eliminar</button>
+        <button mat-raised-button color="primary">Editar</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+<style>
+  .cardAnn{
+    margin-bottom: 10px;
+    background: white;
+    border: solid 2px purple;
+    color: purple;
+  }
+  .sub{
+    color: purple;
+  }
+</style>

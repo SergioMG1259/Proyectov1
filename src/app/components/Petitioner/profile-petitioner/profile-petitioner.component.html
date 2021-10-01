@@ -1,0 +1,16 @@
+<mat-grid-list cols="4" rowHeight="4pc">
+  <mat-grid-tile colspan="4">
+    <div class="names-user">
+      <h1>{{data_petitioner.name_petitioner}}</h1>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="5" colspan="2"><img src="{{data_petitioner.img_petitioner}}" alt="Girl in a jacket" /></mat-grid-tile>
+  <mat-grid-tile rowspan="3" colspan="2">
+    <div class="description-user">
+      <p>
+        {{data_petitioner.info_petitioner}}
+      </p>
+    </div>
+  </mat-grid-tile>
+
+</mat-grid-list>

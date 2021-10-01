@@ -9,7 +9,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatFormFieldModule} from "@angular/material/form-field";
-
+import {ScrollingModule} from "@angular/cdk/scrolling";
 
 @NgModule({
   declarations:[],
@@ -24,7 +24,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
     MatGridListModule,
     MatDialogModule,
     MatFormFieldModule,
-
+    ScrollingModule
   ]
 })
 export class DemoMaterialModule{}

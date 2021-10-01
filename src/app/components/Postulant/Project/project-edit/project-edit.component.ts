@@ -1,4 +1,4 @@
-import {Component, Inject, OnInit} from '@angular/core';
+import {Component, EventEmitter, Inject, OnInit, Output} from '@angular/core';
 import {DemoMaterialModule} from "../../../../material-module";
 import {Project} from "../model/project";
 import {ProjectsServices} from "../../services/Projects-services";
@@ -6,6 +6,7 @@ import {PostulantServices} from "../../services/Postulant-services";
 import {Input} from "@angular/core";
 import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from "@angular/material/dialog";
 import {Optional} from "@angular/core";
+
 
 @Component({
   selector: 'app-project-edit',
@@ -19,7 +20,7 @@ export class ProjectEditComponent implements OnInit {
   titleforedit:string
   constructor(public dialog:MatDialog,@Optional() @Inject(MAT_DIALOG_DATA)public data:Project, private edit:ProjectsServices) {
     this.title_edit=data.title
-    this.description_edition=data.description
+    this.description_edition=""
     this.id_edit=data.id
     this.titleforedit=""
   }
@@ -33,6 +34,11 @@ export class ProjectEditComponent implements OnInit {
     })
   }
   ngOnInit(): void {
+  }
+  @Output()sendalert=new EventEmitter<number>();
+  send_alert() {
+    this.sendalert.emit(1);
+    console.log("funciona")
   }
 
 }

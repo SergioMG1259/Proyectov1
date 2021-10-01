@@ -60,4 +60,24 @@ export class ProjectsServices {
         retry(2),
         catchError(this.handleError));
   }
+  returnId_for_Add(){
+    /*  item:Project  return this.http.post<Project>(`${this.basePath}`, JSON.stringify(item),this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));*/
+    return this.http.get<Project[]>(`${this.basePath}?_sort=id&_order=desc}`, this.httpOptions)
+
+  }
+  AddProject(item:Project){
+    return this.http.post<Project>(this.basePath, JSON.stringify(item), this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
+  }
+  DeleteProject(id:number){
+    return this.http.delete<Project>(`${this.basePath}/${id}`,this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
+  }
 }

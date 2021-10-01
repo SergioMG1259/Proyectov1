@@ -41,6 +41,100 @@
       "linktogithub": " ",
       "evidence": "https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760",
       "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png"
+    },
+    {
+      "id": 3,
+      "title": "Genshin Impact 2",
+      "description": "lorem impsum 1 funciono xd",
+      "idown": 1,
+      "linktogithub": " ",
+      "evidence": "https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760",
+      "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png"
+    },
+    {
+      "id": 5,
+      "title": "ggghg",
+      "description": "ppppp",
+      "idown": 1,
+      "linktogithub": " ",
+      "evidence": "https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760",
+      "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png"
+    },
+    {
+      "id": 6,
+      "title": "Cod",
+      "description": "sadasdasda",
+      "idown": 1,
+      "linktogithub": " ",
+      "evidence": "https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760",
+      "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png"
+    },
+    {
+      "id": 7,
+      "title": "yyyyy",
+      "description": "zxxxxzzzxx",
+      "idown": 1,
+      "linktogithub": " ",
+      "evidence": "https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760",
+      "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png"
+    }
+  ],
+  "petitioners": [
+    {
+      "id": 1,
+      "name_petitioner": "Google",
+      "info_petitioner": "lorem ipsum asdadsad",
+      "img_petitioner": "https://mk0teccompe9oogd4enx.kinstacdn.com/wp-content/uploads/2017/02/google-logo.jpg"
+    },
+    {
+      "id": 2,
+      "name_petitioner": "Facebook",
+      "info_petitioner": "lorem ipsum asdadsad",
+      "img_petitioner": "https://mk0teccompe9oogd4enx.kinstacdn.com/wp-content/uploads/2017/02/google-logo.jpg"
+    }
+  ],
+  "announcements": [
+    {
+      "id": 1,
+      "titleAnnouncement": "Se necesita...",
+      "petitionerName": "Google",
+      "id_petitioner": 1,
+      "speciality": "Ux design",
+      "experience": "Practicante",
+      "infoJob": "lorem ipsum ",
+      "date:": "18-09-2021",
+      "salary": 200,
+      "salary_type": "dolares",
+      "visible": 1,
+      "postulants": []
+    },
+    {
+      "id": 2,
+      "titleAnnouncement": "Se necesita 2...",
+      "petitionerName": "Facebook",
+      "id_petitioner": 2,
+      "speciality": "Programador Web",
+      "experience": "Practicante",
+      "infoJob": "lorem ipsum ",
+      "date:": "18-09-2021",
+      "salary": 200,
+      "salary_type": "dolares",
+      "visible": 1,
+      "postulants": []
+    },
+    {
+      "id": 1,
+      "titleAnnouncement": "Se necesita 3...",
+      "petitionerName": "Google",
+      "id_petitioner": 1,
+      "speciality": "Ux design",
+      "experience": "Senior",
+      "infoJob": "lorem ipsum ",
+      "date:": "18-09-2021",
+      "salary": 600,
+      "salary_type": "dolares",
+      "visible": 0,
+      "postulants": []
     }
   ]
 }

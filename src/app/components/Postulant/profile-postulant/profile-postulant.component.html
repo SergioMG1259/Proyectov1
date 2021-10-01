@@ -23,7 +23,7 @@
   <mat-grid-tile colspan="4">
     <div class="projects-action">
       <h2>Projects</h2>
-      <button mat-raised-button color="primary" >Add Project</button>
+      <button mat-raised-button color="primary" (click)="addproject()">Add Project</button>
     </div>
   </mat-grid-tile>
   <!--<mat-grid-tile rowspan="6" colspan="1">
@@ -40,6 +40,7 @@
       </mat-card-header>
       <img mat-card-image src="{{project.img}}" alt="Photo of a Shiba Inu" (click)="loockProject(project)">
       <mat-card-actions>
+        <button mat-raised-button color="primary"  (click)="deleteproject_dialog(project)">Eliminar</button>
         <button mat-raised-button color="primary" (click)="editProject(project)">Editar</button>
       </mat-card-actions>
     </mat-card>
