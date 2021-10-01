@@ -54,14 +54,6 @@ export class ProjectsServices {
         retry(2),
         catchError(this.handleError));
   }
-  addProyect(id:number,data:any):Observable<Project>{
-    console.log("Almenos se ejecuta?")
-    console.log(data)
-    return this.http.post<Project>(`${this.basePath}/${id}`,JSON.stringify(data),this.httpOptions).pipe(
-      retry(2),
-      catchError(this.handleError)
-    )
-  }
   setproyect(id:number,data:any){
     return this.http.patch<Project>(`${this.basePath}/${id}`,data,this.httpOptions)
       .pipe(
