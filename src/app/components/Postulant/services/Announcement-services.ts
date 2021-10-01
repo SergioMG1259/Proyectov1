@@ -7,6 +7,7 @@ import{throwError} from "rxjs";
 import {Announcement} from "../../Petitioner/announcement/model/announcement";
 import {catchError} from "rxjs/operators";
 import {retry} from "rxjs/operators";
+import {Project} from "../Project/model/project";
 
 @Injectable({
   providedIn:'root'
@@ -41,6 +42,24 @@ export class AnnouncementServices {
   }
   getAllAnnouncements(){
     return this.http.get<any>(this.basePath, this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
+  }
+  postAnnouncement(item:Announcement){
+    return this.http.post<Announcement>(this.basePath, JSON.stringify(item), this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
+  }
+  deleteAnnouncement(id:number){
+    return this.http.delete<Announcement>(`${this.basePath}/${id}`,this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
+  }
+  setAnnouncement(id:number,data:any){
+    return this.http.patch<Project>(`${this.basePath}/${id}`,data,this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));

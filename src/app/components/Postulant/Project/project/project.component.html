@@ -28,7 +28,7 @@
 </mat-dialog-actions>-->
 
 <mat-dialog-content [mat-dialog-close]="false">
- <mat-card>
+ <mat-card class="card-proj">
   <mat-card-title>{{title}}</mat-card-title>
    <mat-dialog-content>{{description}}</mat-dialog-content>
    <img mat-card-image src="{{img}}" alt="photo">
@@ -38,3 +38,10 @@
     <button mat-button mat-dialog-close>Cancel</button>
   </mat-dialog-actions>
 </mat-dialog-content>
+
+<style>
+  .card-proj{
+    height: 300px;
+  }
+
+</style>

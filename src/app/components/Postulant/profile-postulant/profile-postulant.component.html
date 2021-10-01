@@ -3,9 +3,10 @@
   <mat-grid-tile colspan="4">
     <div class="names-user">
       <h1>{{postulantData.myname+" "+ postulantData.lastname}}</h1>
+      <button mat-raised-button color="primary" (click)="Open_dialog_Edit_profile()">Modificar</button>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="5" colspan="2"><img src="https://pbs.twimg.com/profile_images/1320794616703164418/A8W5BsYL.jpg" alt="Girl in a jacket" /></mat-grid-tile>
+  <mat-grid-tile rowspan="5" colspan="2"><img src="{{postulantData.img}}" alt="Girl in a jacket" /></mat-grid-tile>
   <mat-grid-tile rowspan="3" colspan="2">
     <div class="description-user">
       <p>
@@ -23,7 +24,7 @@
   <mat-grid-tile colspan="4">
     <div class="projects-action">
       <h2>Projects</h2>
-      <button mat-raised-button color="primary" (click)="addproject()">Add Project</button>
+      <button mat-raised-button color="primary" (click)="addproject()">Agregar proyecto</button>
     </div>
   </mat-grid-tile>
   <!--<mat-grid-tile rowspan="6" colspan="1">
@@ -38,7 +39,10 @@
       <mat-card-header >
         <mat-card-title>{{project.title}}</mat-card-title>
       </mat-card-header>
-      <img mat-card-image src="{{project.img}}" alt="Photo of a Shiba Inu" (click)="loockProject(project)">
+
+        <img mat-card-image src="{{project.img}}" alt="Photo of a Shiba Inu" (click)="loockProject(project)">
+
+
       <mat-card-actions>
         <button mat-raised-button color="primary"  (click)="deleteproject_dialog(project)">Eliminar</button>
         <button mat-raised-button color="primary" (click)="editProject(project)">Editar</button>
@@ -54,7 +58,9 @@
 <style>
   .example-card {
     max-width: 400px;
+
   }
+
   .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;

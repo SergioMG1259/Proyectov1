@@ -6,9 +6,9 @@ export interface Announcement{
   "speciality": string,
   "experience": string,
   "infoJob": string,
-  "date:": string,
+  "date": string,
   "salary": number,
   "salary_type": string,
-  "visible": number,
+  "visible": string,
   "postulants": any
 }

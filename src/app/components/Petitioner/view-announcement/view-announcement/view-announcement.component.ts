@@ -4,6 +4,9 @@ import {AnnouncementServices} from "../../../Postulant/services/Announcement-ser
 import {Announcement} from "../../announcement/model/announcement";
 import {MAT_DIALOG_DATA, MatDialog} from "@angular/material/dialog";
 import {AddAnnouncementComponent} from "../../announcement/add-announcement/add-announcement.component";
+import {DeleteAnnouncementComponent} from "../../announcement/delete-announcement/delete-announcement.component";
+import {AnnouncementComponent} from "../../announcement/announcement/announcement.component";
+import {EditAnnouncementComponent} from "../../announcement/edit-announcement/edit-announcement.component";
 
 @Component({
   selector: 'app-view-announcement',
@@ -29,6 +32,15 @@ export class ViewAnnouncementComponent implements OnInit {
   }
   Open_Dialog_Add(){
     const dialogRef=this.dialog.open(AddAnnouncementComponent)
+  }
+  Open_Dialog_Delete(Ann:Announcement){
+    const dialogRef=this.dialog.open(DeleteAnnouncementComponent,{data:Ann})
+  }
+  Open_Dialog_View_Announcement(Ann:Announcement){
+    const dialogRef=this.dialog.open(AnnouncementComponent,{data:Ann})
+  }
+  Open_Dialo_Edit(Ann:Announcement){
+    const dialogRef=this.dialog.open(EditAnnouncementComponent,{data:Ann})
   }
 
 }

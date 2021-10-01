@@ -17,6 +17,10 @@ import { ProfilePetitionerComponent } from './components/Petitioner/profile-peti
 import { AnnouncementComponent } from './components/Petitioner/announcement/announcement/announcement.component';
 import { ViewAnnouncementComponent } from './components/Petitioner/view-announcement/view-announcement/view-announcement.component';
 import { AddAnnouncementComponent } from './components/Petitioner/announcement/add-announcement/add-announcement.component';
+import { DeleteAnnouncementComponent } from './components/Petitioner/announcement/delete-announcement/delete-announcement.component';
+import { EditAnnouncementComponent } from './components/Petitioner/announcement/edit-announcement/edit-announcement.component';
+import { AnnouncementsJobsComponent } from './components/Postulant/AnnouncementJobs/announcements-jobs/announcements-jobs.component';
+import { DialogEditProfileComponent } from './components/Postulant/dialog-edit-profile/dialog-edit-profile.component';
 
 
 
@@ -39,6 +43,10 @@ import { AddAnnouncementComponent } from './components/Petitioner/announcement/a
     AnnouncementComponent,
     ViewAnnouncementComponent,
     AddAnnouncementComponent,
+    DeleteAnnouncementComponent,
+    EditAnnouncementComponent,
+    AnnouncementsJobsComponent,
+    DialogEditProfileComponent,
 
 
 

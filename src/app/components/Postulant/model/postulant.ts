@@ -8,4 +8,5 @@ export interface Postulant{
   "myexperience": string,
   "myinfo":   string,
   "namegithub": string,
+  "img":string
 }

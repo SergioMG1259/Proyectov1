@@ -1,1 +1,16 @@
-<p>announcement works!</p>
+<mat-dialog-content [mat-dialog-close]="false" >
+  <mat-card class="card-A">
+    <mat-card-title>{{title_A}}</mat-card-title>
+    <mat-card-subtitle>{{speciality_A+" "+experience_A}}</mat-card-subtitle>
+    <mat-card-subtitle>{{"suelo: "+salary_A+" "+salary_type_A}}</mat-card-subtitle>
+    <mat-card-subtitle>{{date_A}}</mat-card-subtitle>
+    <mat-dialog-content>{{info_Job_A}}</mat-dialog-content>
+    <mat-card-actions>
+      <button>cerrar</button>
+    </mat-card-actions>
+
+  </mat-card>
+  <!--<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>-->
+</mat-dialog-content>

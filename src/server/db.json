@@ -2,14 +2,15 @@
   "postulants": [
     {
       "id": 1,
-      "myname": "Alejandro ",
-      "lastname": "Pizarro ",
+      "myname": "Alejandro",
+      "lastname": "Pizarro",
       "email": "sergiogg1259@gmail.com",
       "password": "123456789",
-      "myespeciality": "Desarrollo web",
-      "myexperience": "Junior",
-      "myinfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis at facilisis bibendum, nulla urna vestibulum massa, sed blandit dolor orci eu ex. Aenean quam arcu, efficitur a vestibulum eget, ultrices in velit. Ut vitae urna porta, auctor sapien eget, lobortis ipsum. Curabitur in eros mattis, dignissim urna eu, hendrerit neque. Pellentesque ultrices auctor mi nec facilisis. Maecenas vel dictum ante. Aenean in massa fermentum, venenatis elit ut, commodo lacus. Morbi efficitur laoreet mauris. Suspendisse potenti.565656",
-      "namegithub": "sergiomg1259"
+      "myespeciality": "Desarrollo Mobile",
+      "myexperience": "Senior",
+      "myinfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo, ex ac vulputate viverra, tortor odio interdum est, sit amet blandit risus nunc a velit. In et mauris eu enim aliquam facilisis nec in mi. Sed quis turpis magna. Nam rhoncus sem nec neque dictum, quis lobortis purus ornare.",
+      "namegithub": "sergiomg1259",
+      "img": "https://programadorsintitulo.com/wp-content/uploads/2021/05/programador-sin-titulo-empleo-e1622432968980.jpeg"
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "myespeciality": "Desarrollo web",
       "myexperience": "Senior",
       "myinfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, turpis at facilisis bibendum, nulla urna vestibulum massa, sed blandit dolor orci eu ex. Aenean quam arcu, efficitur a vestibulum eget, ultrices in velit. Ut vitae urna porta, auctor sapien eget, lobortis ipsum. Curabitur in eros mattis, dignissim urna eu, hendrerit neque. Pellentesque ultrices auctor mi nec facilisis. Maecenas vel dictum ante. Aenean in massa fermentum, venenatis elit ut, commodo lacus. Morbi efficitur laoreet mauris. Suspendisse potenti.",
-      "namegithub": "symphony701"
+      "namegithub": "symphony701",
+      "img": "https://pbs.twimg.com/profile_images/1320794616703164418/A8W5BsYL.jpg"
     }
   ],
   "projects": [
@@ -52,31 +54,22 @@
       "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png"
     },
     {
-      "id": 5,
-      "title": "ggghg",
-      "description": "ppppp",
-      "idown": 1,
-      "linktogithub": " ",
-      "evidence": "https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760",
-      "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png"
-    },
-    {
       "id": 6,
       "title": "Cod",
-      "description": "sadasdasda",
+      "description": "awesome",
       "idown": 1,
       "linktogithub": " ",
       "evidence": "https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760",
-      "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png"
+      "img": "https://pbs.twimg.com/profile_images/1320794616703164418/A8W5BsYL.jpg"
     },
     {
       "id": 7,
-      "title": "yyyyy",
-      "description": "zxxxxzzzxx",
+      "title": "Minecraft",
+      "description": "juego",
       "idown": 1,
       "linktogithub": " ",
       "evidence": "https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760",
-      "img": "https://cdn.vuetifyjs.com/images/cards/cooking.png"
+      "img": "https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2019/05/16/5fa53bad6d530.jpeg"
     }
   ],
   "petitioners": [
@@ -96,16 +89,16 @@
   "announcements": [
     {
       "id": 1,
-      "titleAnnouncement": "Se necesita...",
+      "titleAnnouncement": "Se necesita",
       "petitionerName": "Google",
       "id_petitioner": 1,
       "speciality": "Ux design",
-      "experience": "Practicante",
-      "infoJob": "lorem ipsum ",
-      "date:": "18-09-2021",
-      "salary": 200,
-      "salary_type": "dolares",
-      "visible": 1,
+      "experience": "Semi Senior",
+      "infoJob": "zxc",
+      "date": "18-09-2021",
+      "salary": "1200",
+      "salary_type": "euros",
+      "visible": "si",
       "postulants": []
     },
     {
@@ -115,25 +108,39 @@
       "id_petitioner": 2,
       "speciality": "Programador Web",
       "experience": "Practicante",
-      "infoJob": "lorem ipsum ",
-      "date:": "18-09-2021",
+      "infoJob": "lorem ipsum 23",
+      "date": "18-09-2021",
       "salary": 200,
       "salary_type": "dolares",
-      "visible": 1,
+      "visible": "si",
       "postulants": []
     },
     {
-      "id": 1,
+      "id": 3,
       "titleAnnouncement": "Se necesita 3...",
       "petitionerName": "Google",
       "id_petitioner": 1,
       "speciality": "Ux design",
       "experience": "Senior",
-      "infoJob": "lorem ipsum ",
-      "date:": "18-09-2021",
+      "infoJob": "lorem ipsum 24",
+      "date": "18-09-2021",
       "salary": 600,
       "salary_type": "dolares",
-      "visible": 0,
+      "visible": "no",
+      "postulants": []
+    },
+    {
+      "id": 4,
+      "titleAnnouncement": "Se necesita a",
+      "petitionerName": "Google",
+      "id_petitioner": 1,
+      "speciality": "Desarrollador Mobile",
+      "experience": "Practicante",
+      "infoJob": "asdasdasdasdasd",
+      "date": "18-09-2021",
+      "salary": "789",
+      "salary_type": "soles",
+      "visible": "no",
       "postulants": []
     }
   ]

@@ -15,13 +15,13 @@
 <div>
   <div *ngFor="let announce of My_announcements; let i = index">
     <mat-card class="cardAnn" >
-      <mat-card-header >
+      <mat-card-header (click)="Open_Dialog_View_Announcement(announce)">
         <mat-card-title>{{announce.titleAnnouncement}}</mat-card-title>
         <mat-card-subtitle class="sub">{{announce.speciality+" "+announce.experience}}</mat-card-subtitle>
       </mat-card-header>
       <mat-card-actions>
-        <button mat-raised-button color="primary">Eliminar</button>
-        <button mat-raised-button color="primary">Editar</button>
+        <button mat-raised-button color="primary" (click)="Open_Dialog_Delete(announce)">Eliminar</button>
+        <button mat-raised-button color="primary" (click)="Open_Dialo_Edit(announce)">Editar</button>
       </mat-card-actions>
     </mat-card>
   </div>

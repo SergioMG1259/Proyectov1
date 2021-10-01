@@ -8,6 +8,7 @@ import {Project} from "../Project/model/project";
 import {ProjectEditComponent} from "../Project/project-edit/project-edit.component";
 import {ProjectAddComponent} from "../Project/project-add/project-add.component";
 import {ProjectDeleteComponent} from "../Project/project-delete/project-delete/project-delete.component";
+import {DialogEditProfileComponent} from "../dialog-edit-profile/dialog-edit-profile.component";
 
 @Component({
   selector: 'app-profile-postulant',
@@ -69,6 +70,9 @@ export class ProfilePostulantComponent implements OnInit {
   }
   deleteproject_dialog(pro:Project){
     const dialogRef=this.dialog.open(ProjectDeleteComponent,{data:pro})
+  }
+  Open_dialog_Edit_profile(){
+    const dialogRef=this.dialog.open(DialogEditProfileComponent,{data:this.postulantData})
   }
 
 

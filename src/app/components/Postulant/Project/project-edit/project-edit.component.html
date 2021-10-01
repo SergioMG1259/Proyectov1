@@ -3,12 +3,18 @@
 <mat-dialog-content class="mat-typography">
   <div class="input-container">
     <mat-form-field class="example-form-field" appearance="fill">
-      <mat-label>Project's Title</mat-label>
-      <input matInput type="text" (input)="titleforedit" [(ngModel)]="titleforedit" />
+      <h5>Titulo del proyecto:</h5>
+      <input matInput type="text" [(ngModel)]="titleforedit" />
+
+      <h5>Descripción del proyecto:</h5>
+      <textarea matInput placeholder="A awesome project description" [(ngModel)]="description_edition"></textarea>
+
+      <h5>Url de la imagen:</h5>
+      <input matInput type="text"  [(ngModel)]="img_edit" />
     </mat-form-field>
     <mat-form-field class="example-form-field" appearance="fill">
       <mat-label>Project's Description</mat-label>
-      <textarea matInput placeholder="A awesome project description" [(ngModel)]="description_edition"></textarea>
+
     </mat-form-field>
 
   </div>

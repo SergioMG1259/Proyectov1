@@ -11,6 +11,7 @@ import {MatDialogModule} from "@angular/material/dialog";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {ScrollingModule} from "@angular/cdk/scrolling";
 
+
 @NgModule({
   declarations:[],
   imports:[
@@ -24,7 +25,8 @@ import {ScrollingModule} from "@angular/cdk/scrolling";
     MatGridListModule,
     MatDialogModule,
     MatFormFieldModule,
-    ScrollingModule
+    ScrollingModule,
+
   ]
 })
 export class DemoMaterialModule{}

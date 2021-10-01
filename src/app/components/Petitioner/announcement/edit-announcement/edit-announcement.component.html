@@ -1,0 +1,35 @@
+
+<mat-dialog-content class="mat-typography">
+  <div class="input-container">
+
+    <mat-form-field class="example-form-field" appearance="fill">
+      <h5>Titulo del anuncio:</h5>
+      <input matInput type="text" [(ngModel)]="tittle_edit" />
+
+      <h5>Especialidad:</h5>
+      <input matInput type="text" [(ngModel)]="speciality_edit" />
+
+      <h5>Experiencia:</h5>
+      <input matInput type="text"  [(ngModel)]="experience_edit" />
+
+      <h5>Salario:</h5>
+      <input matInput type="text"  [(ngModel)]="salary_edit" />
+
+      <h5>Tipo de moneda:</h5>
+      <input matInput type="text"  [(ngModel)]="salary_type_edit" />
+
+      <h5>Visible:</h5>
+      <input matInput type="text"  [(ngModel)]="visible_edit" />
+
+      <h5>Agregue descripción</h5>
+      <textarea matInput placeholder="Escriba una descripción del anuncio" [(ngModel)]="infoJob_edit"></textarea>
+    </mat-form-field>
+
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button cdkFocusInitial mat-dialog-close (click)="editAnnouncement()">Save</button>
+</mat-dialog-actions>
+
+

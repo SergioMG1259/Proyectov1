@@ -7,6 +7,7 @@ import{throwError} from "rxjs";
 import {Postulant} from "../model/postulant";
 import {catchError} from "rxjs/operators";
 import {retry} from "rxjs/operators";
+import {Project} from "../Project/model/project";
 
 @Injectable({
  providedIn:'root'
@@ -44,6 +45,12 @@ export class PostulantServices {
   getById(id:number){
    // return this.http.get<any>(`${this.basePath}/?id=${id}`, this.httpOptions)api/v1/
     return this.http.get<any>(`${this.basePath}/${id}`, this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
+  }
+  editProfile(id:number,data:any){
+    return this.http.patch<Postulant>(`${this.basePath}/${id}`,data,this.httpOptions)
       .pipe(
         retry(2),
         catchError(this.handleError));

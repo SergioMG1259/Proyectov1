@@ -1,19 +1,22 @@
 
 <mat-dialog-content class="mat-typography">
+  <h4>Agregar proyecto</h4>
   <div class="input-container">
     <mat-form-field class="example-form-field" appearance="fill">
-      <mat-label>Project's Title</mat-label>
+      <h5>Titulo:</h5>
       <input matInput type="text" [(ngModel)]="title_add"/>
-    </mat-form-field>
-    <mat-form-field class="example-form-field" appearance="fill">
-      <mat-label>Project's Description</mat-label>
+
+      <h5>Descripcion</h5>
       <textarea matInput placeholder="A awesome project description" [(ngModel)]="description_add"></textarea>
+
+      <h5>Url de la Imagen</h5>
+      <input matInput type="text" [(ngModel)]="img_edit"/>
     </mat-form-field>
 
   </div>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button cdkFocusInitial mat-dialog-close (click)="add_project()">Save</button>
+  <button mat-button cdkFocusInitial mat-dialog-close (click)="add_project()">Agregar</button>
 </mat-dialog-actions>
 

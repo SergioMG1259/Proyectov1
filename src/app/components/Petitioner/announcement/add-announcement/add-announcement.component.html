@@ -1,20 +1,60 @@
 
 <mat-dialog-content class="mat-typography">
-  <div class="input-container">
-    <mat-form-field appearance="fill">
+  <div class="form">
+    <h4>Agregar Anuncio</h4>
+    <mat-form-field class="form-d">
+      <h5>Titulo:</h5>
       <mat-label>Titulo Anuncio</mat-label>
-      <input matInput type="text"/>
-    </mat-form-field>
-    <mat-form-field appearance="fill">
+      <input matInput type="text" [(ngModel)]="tittle_add"/>
+
+      <h5>Especialidad requerida:</h5>
+      <mat-label>Titulo Anuncio</mat-label>
+      <input matInput type="text" [(ngModel)]="speciality_add" />
+
+      <h5>Experiencia requerida:</h5>
+      <mat-label>Titulo Anuncio</mat-label>
+      <input matInput type="text" [(ngModel)]="experience_add" />
+
+      <h5>Sueldo</h5>
+      <mat-label>Titulo Anuncio</mat-label>
+      <input matInput type="text" [(ngModel)]="salary_add" />
+
+      <h5>Tipo de moneda</h5>
+      <mat-label>Titulo Anuncio</mat-label>
+      <input matInput type="text" [(ngModel)]="salary_type_add" />
+
+      <!--<h5>¿Quien lo publica?</h5>
+      <mat-label>Titulo Anuncio</mat-label>
+      <input matInput type="text" [(ngModel)]="" />-->
+
+      <h5>Visible?</h5>
+      <mat-label>Titulo Anuncio</mat-label>
+      <input matInput type="text" [(ngModel)]="visible_add" />
+
+      <h5>Descripción:</h5>
       <mat-label>Project's Description</mat-label>
-      <textarea matInput placeholder="A awesome project description" ></textarea>
+      <textarea matInput placeholder="Escriba descripción" [(ngModel)]="infoJob_add" ></textarea>
     </mat-form-field>
 
   </div>
+
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button cdkFocusInitial mat-dialog-close>Save</button>
+  <button mat-button mat-dialog-close mat-raised-button color="primary">Cancel</button>
+  <button mat-button cdkFocusInitial mat-dialog-close mat-raised-button color="primary" (click)="Add_Announcement()">Save</button>
 </mat-dialog-actions>
 
+<style>
+  .form{
+    background: white;
+    color: black;
+  }
+  .mat-typography{
+    background: white;
+  }
+  .form-d{
+    background: white;
+    width: 500px;
+  }
+</style>
 

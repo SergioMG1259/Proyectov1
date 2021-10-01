@@ -17,11 +17,13 @@ export class ProjectAddComponent implements OnInit {
   id_add:number
   title_add:string
   description_add:string
+  img_edit:string
   constructor(public dialog:MatDialog,@Optional() @Inject(MAT_DIALOG_DATA)public data:Postulant,private edit:ProjectsServices) {
     this.id_postulant_add=data.id
     this.id_add=0
     this.title_add=""
     this.description_add=""
+    this.img_edit=""
   }
 
   ngOnInit(): void {
@@ -49,7 +51,7 @@ export class ProjectAddComponent implements OnInit {
       idown: this.id_postulant_add,
       linktogithub: " ",
       evidence: "https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760",
-      img: "https://cdn.vuetifyjs.com/images/cards/cooking.png"
+      img: this.img_edit
     }
     this.edit.AddProject(this.data_proyect).subscribe(response=>{
       console.log(response)

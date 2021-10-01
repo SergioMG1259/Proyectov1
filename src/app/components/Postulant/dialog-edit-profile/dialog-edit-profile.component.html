@@ -1,0 +1,32 @@
+
+<mat-dialog-content class="mat-typography">
+  <div class="input-container">
+    <mat-form-field class="example-form-field" appearance="fill">
+      <h5>Nombre:</h5>
+      <input matInput type="text"  [(ngModel)]="name_edit" />
+
+      <h5>Apellido:</h5>
+      <input matInput type="text"  [(ngModel)]="lastname_edit" />
+
+      <h5>Especialidad:</h5>
+      <input matInput type="text"  [(ngModel)]="speciality_edit" />
+
+      <h5>Experiencia:</h5>
+      <input matInput type="text"  [(ngModel)]="experience_edit" />
+
+      <h5>Url de imagen:</h5>
+      <input matInput type="text"  [(ngModel)]="img_edit" />
+
+      <h5>Agrega desctipción</h5>
+      <mat-label>Project's Description</mat-label>
+      <textarea matInput placeholder="Agrega una descripción breve" [(ngModel)]="info_edit"></textarea>
+
+    </mat-form-field>
+
+
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button cdkFocusInitial mat-dialog-close (click)="EditProfilePostulant()">Save</button>
+</mat-dialog-actions>
